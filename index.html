@@ -1,0 +1,975 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SHIVAM VORA</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet">
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/jquery.lazyloadxt/1.1.0/jquery.lazyloadxt.min.js">
+
+        <style>
+            html{
+    scroll-behavior: smooth;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+a{
+
+    text-decoration: none;
+
+}
+a:hover{
+    text-decoration: none;
+}
+li{
+    list-style: none;
+}
+ .extra-div h2, .servicediv h2{
+    font-size: 0.9rem;
+    margin: 20px 0 15px 0;
+    font-weight: bold;
+    line-height: 1.1;
+    word-spacing: 4px;
+}
+.header{
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0,168,255,0.1),rgba(0,168,255,0.1)), url('../d5.jpg') ;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    position: relative;
+    clip-path: polygon(100% 0%,100% 77%,50% 100%,0 75%,0 0);
+
+}
+    .navbar:before{
+    content: "";
+    position:absolute;
+    top: 0%;
+    bottom: 0%;
+    left: 0;
+    right: 0;
+    opacity: 0.3;
+    z-index: -1;
+    background: linear-gradient(to right, #e5b9ff 0%, #e5b9ff 0%,#e5b9ff 100%);
+    }
+.header:before{
+    content: "";
+  position: absolute;
+  top: 0%;
+  bottom: 0%;
+  left: 0;
+  right: 0;
+  opacity: 0.3;
+  z-index: -1;
+  background: linear-gradient(to right, #1e5799 0%, #3ccdbb 0%,#8d4397 100%);
+}
+.nav-item a{
+    color: #fff!important;
+    font-weight: bold;
+}
+.header-section{
+    width: 100%;
+    height: inherit;
+    color:lavenderblush;
+    font-weight: bolder;
+    text-align: center;
+    position: relative;
+}
+.center-div{
+    width: 100%;
+    height: auto;
+    position: absolute;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    -ms-transform: translate(-50%,-50%);
+    -webkit-transform: translate(-50%,-50%);
+}
+p{
+    font-size: 0.9rem;
+    line-height: 1.6;
+    font-weight: 800;
+    color:black;
+    
+}
+.header-buttons a{
+  border:1px solid #fff;
+  border-radius: 100px;
+  margin: 0 5px;
+  padding: 12px 35px;
+  outline: none;
+  color: white;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.4;
+  text-align: center;
+  
+}
+
+.header-buttons a:hover{
+    color:green;
+    background: #fff;
+    font-weight: 700;
+    text-decoration: none;
+    box-shadow: 0 0 20px 0 rgba(0,0,0.10);
+}
+.center-div{
+    font-size: 1.3rem;
+    padding: 10px 0 20px;
+}
+.header-extradiv{
+    width: 100%;
+    height: auto;
+    margin: 100px 0;
+    text-align: center;
+}
+.extra-div{
+    background:#fff;
+    border: medium none;
+    padding: 50px!important;
+    border-radius: 3px;
+    transition: 0.3s;
+}
+.extra-div:hover{
+  box-shadow: 0 0 20px 0 rgb(78, 76, 76);
+  transform: translateY(-20px);
+}
+
+
+.serviceoffers{
+    background: #f5f9f9;
+    padding: 50px 0;
+    margin-bottom: 50px;
+}
+
+.headings{
+    margin-bottom: 50px;
+}
+
+.headings h1{
+    font-size: 1.5rem;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+.names h1{
+    color: #2e2e2e;
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+.service-icons{
+    direction: flex;
+    justify-items: center;
+    align-content: center;
+}
+.progress{
+    margin-bottom: 25px!important;
+    background:silver;
+}
+i{
+    color:#2fccd0;
+}
+.project-work{
+    margin: 100px 0;
+}
+.project-work{
+    font-size: 2rem;
+    text-align: center;
+
+}
+
+.pricing{
+    width: 100%;
+    height: 100vh;
+    padding: 50px;
+    position: relative;
+}
+.pricing:before{
+    content: "";
+    position: absolute;
+    top: 0%;
+    bottom: 0%;
+    left: 0;
+    right: 0;
+    opacity: 0.5;
+    z-index: -1;
+    background: linear-gradient(160deg,#ffa2a2 55%,#fff 0%);
+  }
+.money{
+    font-size: 40px;
+    line-height: 1;
+    color: #606060;
+}
+.card{
+    transition: 0.4s ease;
+
+}
+.card-header{
+    font-size:1.6rem;
+    font-weight: bold;
+    background: #fff!important;
+    padding: 25px 9!important;
+}
+.card-body{
+    padding: 30px 0px!important;
+}
+.card-body li{
+    margin: 10px 0;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 1.6;
+    color: #606060;
+}
+.card-footer{
+    background: white!important;
+    padding: 30px 0px!important;
+}
+.card-footer a{
+    border:1px solid #50d1c0;
+    border-radius: 100px;
+    margin: 0 5px;
+    padding: 12px 35px;
+    outline: none;
+    color: #50d1c0;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.4;
+    text-align: center;
+    
+  }
+  
+  .card-footer a:hover{
+      color:#fff;
+      background: #0717f3;
+      font-weight: 700;
+      text-decoration: none;
+      box-shadow: 0 0 20px 0 rgba(0,0,0.10);
+  }
+  .card:hover{
+      transform: translateY(-20px);
+      box-shadow: 0 0 20px 0 rgba(0,0,0.10);
+  }
+ .card:hover .card-header, .card:hover .money{
+     color: #50d1c0;
+ }
+
+.happyclients{
+    width: 100%;
+    height: 100vh;
+    padding: 80px 0;
+
+}
+.box{
+    text-align: center;
+    border: 1px solid rgba(0,0,0,0.2);
+    box-shadow: 0 5px 10px 0 rgba(0,0,0,0.3);
+    border-radius: 3px;
+    transition: 0.3s ease;
+}
+.box:hover{
+    background: #ffaff2;
+}
+.box:hover p{
+    color:white;
+}
+.carousel-indicators{
+    position: absolute;
+    right: 0;
+    bottom: -60px!important;
+
+}
+.carousel-indicators li{
+    background-color: #000000!important;
+}
+.box a{
+    position: relative;
+}
+.box a img{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-top: 20px;
+}
+.box a:after{
+ content: "\f10d";
+ font-family: FontAwesome;
+ width: 40px;
+ height: 40px;
+ border-radius: 50%;
+ background: linear-gradient(to right,#aacdf5 0%,#3ccdbb 0%,#f8ffb5 100%);
+ color: white;
+ position: absolute;
+ top: 120%;
+ left: 70%;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+}
+
+.box h1{
+    font-size:13px;
+    font-weight: 700;
+    color: #000;
+    margin-bottom: 10px;
+}
+.box h2{
+    font-size: 13px;
+    font-weight: 400px;
+    color: #666666;
+    margin-bottom: 20px;
+}
+.contactus{
+    width: 100%;
+    height: 100vh;
+    padding: 80px 0;
+    position: relative;
+}
+.contactus:before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    z-index: -1;
+    background: linear-gradient(330deg,#baf5ba 55%,rgb(250, 183, 183) 0%);
+}
+.form-button button{
+    border:1px solid #ed93f0;
+    border-radius: 100px;
+    margin: 0 5px;
+    padding: 12px 35px;
+    outline: none;
+    color: pink;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.4;
+    text-align: center;
+    background: transparent;
+}
+form:hover .form-button button{
+    background: #fff;
+    color: #50d1c0;
+    box-shadow: 0,0,20px,0 rgba(0, 0, 0, 0.5);
+}
+::placeholder{
+        font-size: 0.85rem;
+        
+
+}
+.footersection{
+    width: 100%;
+    height: auto;
+    padding: 70px 0 20px 0;
+    background: #000000;
+    position: relative;
+    font-weight: 400;
+
+}
+.footersection p{
+    color: rgb(255, 255, 255);
+    font-weight: 400;
+}
+.footersection li a{
+    font-size: 0.9rem;
+    line-height: 1.6;
+    font-weight: bold;
+    color: yellow;
+    text-transform: capitalize;
+    font-weight: 400;
+}
+#myBtn{
+    display: flex;
+    position: fixed;
+    bottom: 20px;
+    right: 40px;
+    z-index: 99;
+    border: #fff;
+    background: red;
+    padding: 10px;
+    border-radius: 10px;
+    cursor: pointer;
+
+}
+#myBtn:hover{
+    background: green;
+
+}
+        </style>
+</head>
+
+<body>
+    <div class="header" id="topheader">
+        <nav class="navbar navbar-expand-lg fixed-top bg-dark">
+            <div class="container text-uppercase p-2">
+
+
+                <a class="navbar-brand font-weight-bold text-white" href="#">Shivam vora</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse"
+                    data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ml-auto text-uppercase">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#servicedivv">Service</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#pricingdiv">Price</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#footerdiv">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#contactid">Contact</a>
+                        </li>
+
+
+                    </ul>
+
+                </div>
+            </div>
+        </nav>
+
+        <section class="header-section">
+            <div class="center-div">
+                <h1 style="font-weight: bold;">["hello! I'm Shivam vora"]</h1>
+                <h1 class="font-weight-bold">
+                    I'm a Front-end & Back-end Developer
+                </h1 class="count">
+                <p>I can create website for your company</p>
+                <div class="header-buttons">
+                    <a href="#footerdiv">About us</a>
+                    <a href="#contactid">Contact us</a>
+                </div>
+
+            </div>
+        </section>
+
+    </div>
+
+    <!--*********************** header parts end ***************************** -->
+
+    <!--*********************** three extra header div start ***************************** -->
+
+    <section class="header-extradiv">
+        <div class="container">
+            <div class="row">
+                <div class="extra-div col-lg-4 col-md-4 col-12">
+                    <a href=""><i class="fa-4x fa fa-desktop"></i></a>
+
+                    <h2>EASY TO USE</h2>
+                    <p>The website I create is very easy to use for everyone.Complex code and simple logic</p>
+                </div>
+                <div class="extra-div col-lg-4 col-md-4 col-12">
+                    <a href=""><i class="fa-4x fa fa-trophy"></i></a>
+
+                    <h2>AWESOME DESIGN</h2>
+                    <p>Every website I design looks so beautiful,I can do very good front-end design</p>
+                </div>
+
+                <div class="extra-div col-lg-4 col-md-4 col-12">
+                    <a href=""><i class="fa-4x fa fa-code"></i></a>
+
+                    <h2>EASY TO CODE</h2>
+                    <p>I use all the code and technology needed to create a website...</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--*********************** three extra header div start ***************************** -->
+
+    <!--*********************** offer section start ***************************** -->
+    <section class="serviceoffers" id="service">
+        <div class="container headings text-center">
+            <h1 class="text-center font-weight-bold" id="servicedivv">
+                WHAT DO I OFFER
+            </h1>
+            <P class="text-center"></P>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 col-10 offset-1 offset-lg-0">
+                    <div class="names my-3">
+                        <h1>HTML</h1>
+                        <div class="progress w-75">
+                            <div class="progress-bar progress-bar-striped progress-bar-animated" style="width:98%">98%
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="names my-3">
+                        <h1>CSS</h1>
+                        <div class="progress w-75">
+                            <div class="progress-bar progress-bar-striped progress-bar-animated bg-success"
+                                style="width:95%">95%
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="names my-3">
+                        <h1>JAVASCRIPT</h1>
+                        <div class="progress w-75">
+                            <div class="progress-bar progress-bar-striped progress-bar-animated bg-warning"
+                                style="width:90%">90%
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="names my-3">
+                        <h1>PHP</h1>
+                        <div class="progress w-75">
+                            <div class="progress-bar progress-bar-striped progress-bar-animated bg-danger"
+                                style="width:85%">85%
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="names my-3">
+                        <h1>NODE JS</h1>
+                        <div class="progress w-75">
+                            <div class="progress-bar progress-bar-striped progress-bar-animated bg-dark"
+                                style="width:80%">80%
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+
+                <div class="col-lg-6 col-md-12 col-12" id="servicediv">
+                    <div class="row">
+                        <div class="col-lg-2 col-2 service-icons">
+                            <i class="fa-4x fa fa-desktop"></i>
+                        </div>
+                        <div class="col-lg-10 col-10">
+                            <h2>Website Developement</h2>
+                            <p>I can create all kinds of websites,like company website,school website,university resource.Also I can work with database</p>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-lg-2 col-2 service-icons">
+                            <i class="fa-4x fa fa-code"></i>
+                        </div>
+                        <div class="col-lg-10 col-10">
+                            <h2>Web Design</h2>
+                            <p>I use HTML, CSS, BOOTSTRAP and JQUERY and JAVASCRIPT to make the website beautiful.</p>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-lg-2 col-2 service-icons">
+                            <i class="fa-4x fa fa-phone"></i>
+                        </div>
+                        <div class="col-lg-10 col-10">
+                            <h2>Support 27/7</h2>
+                            <p>I am ready for my client twenty four hours for problem solving.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </section>
+
+
+    <!--*********************** offer section end ***************************** -->
+
+    <!--*********************** project done start ***************************** -->
+    <section class="project-work">
+        <div class="container headings text-center">
+            <h5 class="text-center font-weight-bold" id="pricing-div">
+                MORE THAN 20+ PROJECT CREATED
+            </h5>
+        </div>
+
+        <div class="container d-flex justify-content-around align-item-center">
+            <div>
+                <h1 class="count">5+</h1>
+                <p>CMS Installation</p>
+            </div>
+
+            <div>
+                <h1 class="count">10+</h1>
+                <p>Website Develope</p>
+            </div>
+
+            <div>
+                <h1 class="count">5+</h1>
+                <p>Database Website</p>
+            </div>
+
+            <div>
+                <h1 class="count">5+</h1>
+                <p>Wordpress Website</p>
+            </div>
+        </div>
+
+    </section>
+
+    <!--*********************** project done end ***************************** -->
+
+
+
+    <!--*********************** our pricing start ***************************** -->
+    <section class="pricing" id="pricingdiv">
+        <div class="container headings text-center">
+            <h1 class="text-center font-weight-bold text-white">
+                MY BEST PRICING
+            </h1>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 col-12">
+                    <div class="card text-center">
+                        <div class="card-header">BASIC</div>
+                        <div class="card-body">
+                            <li> $ <span class="money">20</span>/website</li>
+                            <li>Responsive Websites</li>
+                            <li>Domain Name Free</li>
+                            <li>Mobile Friendly</li>
+                            <li>Webmail Support</li>
+                            <li>Customer Support 24/7</li>
+                        </div>
+                        <div class="card-footer">
+                            <a href="">Purchase</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-12">
+                    <div class="card text-center">
+                        <div class="card-header">STANDARD</div>
+                        <div class="card-body">
+                            <li> $ <span class="money">40</span>/website</li>
+                            <li>Responsive Websites</li>
+                            <li>Domain Name Free</li>
+                            <li>Mobile Friendly</li>
+                            <li>Webmail Support</li>
+                            <li>Customer Support 24/7</li>
+                        </div>
+                        <div class="card-footer">
+                            <a href="">Purchase</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-12">
+                    <div class="card text-center">
+                        <div class="card-header">UNLIMITED</div>
+                        <div class="card-body">
+                            <li> $ <span class="money">60</span>/website</li>
+                            <li>Responsive Websites</li>
+                            <li>Domain Name Free</li>
+                            <li>Mobile Friendly</li>
+                            <li>Webmail Support</li>
+                            <li>Customer Support 24/7</li>
+                        </div>
+                        <div class="card-footer">
+                            <a href="">Purchase</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--*********************** our pricing end ***************************** -->
+
+    <!--*********************** our customers fee dback start ***************************** -->
+    <section class="happyclients">
+        <div class="container headings text-center">
+            <h1 class="text-center font-weight-bold">
+                MY HAPPY CLIENTS
+            </h1>
+            <P class="text-capitalize">My Satisfied Customer Says</P>
+        </div>
+
+        <div id="demo" class="carousel slide" data-ride="carousel">
+
+            <!-- Indicators -->
+            <ul class="carousel-indicators">
+                <li data-target="#demo" data-slide-to="0" class="active"></li>
+                <li data-target="#demo" data-slide-to="1"></li>
+                <li data-target="#demo" data-slide-to="2"></li>
+            </ul>
+
+            <!-- The slideshow -->
+            <div class="carousel-inner container">
+                <div class="carousel-item active">
+                    <div class="row">
+                        <div class="col-lg-4 col-md-4 col-12">
+                            <div class="box">
+                                <a href="#"><img src="shi.jpg" class="img-fluid img-thumbnail"></a>
+                                <p class="m-4">I am satisfied with my work and my every client is also satisfied with my work.</p>
+                                <h1>Shivam Vora</h1>
+                                <h2>Web Developer</h2>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-4 col-md-4 col-12">
+                            <div class="box">
+                                <a href="#"><img src="a1.jpg" class="img-fluid img-thumbnail"></a>
+                                <p class="m-4">This one is my satisfied client he is Managing director in new indian enterprise</p>
+                                <h1>Ashish Vora</h1>
+                                <h2>Managing Director in Indian Enterprise</h2>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-4 col-md-4 col-12">
+                            <div class="box">
+                                <a href="#"><img src="ut.jpg" class="img-fluid img-thumbnail"></a>
+                                <p class="m-4">uttam vora is owner in new indian entrprice as well as my client</p>
+                                <h1>Uttam Vora</h1>
+                                <h2>Owner in Indian Enterprise</h2>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="carousel-item">
+                    <div class="row">
+                        <div class="col-lg-4 col-md-4 col-12" id="">
+                            <div class="box">
+                                <a href="#"><img src="shi.jpg" class="img-fluid img-thumbnail"></a>
+                                <p class="m-4">I am satisfied with my work and my every client is also satisfied with my work.</p>
+                                <h1>Shivam Vora</h1>
+                                <h2>Web Developer</h2>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-4 col-md-4 col-12">
+                            <div class="box">
+                                <a href="#"><img src="a1.jpg" class="img-fluid img-thumbnail"></a>
+                                <p class="m-4">This one is my satisfied client he is Managing director in new indian enterprise</p>
+                                <h1>Ashish Vora.</p>
+                                <h2>Managing Director in Indian Enterprise</h2>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-4 col-md-4 col-12">
+                            <div class="box">
+                                <a href="#"><img src="ut.jpg" class="img-fluid img-thumbnail"></a>
+                                <p class="m-4">uttam vora is owner in new indian entrprice as well as my client</p>
+                                <h1>Uttam Vora</h1>
+                                <h2>Owner in Indian Enterprise</h2>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="row">
+                        <div class="col-lg-4 col-md-4 col-12">
+                            <div class="box">
+                                <a href="#"><img src="shi.jpg" class="img-fluid img-thumbnail"></a>
+                                <p class="m-4">I am satisfied with my work and my every client is also satisfied with my work.</p>
+                                <h1>Shivam Vora</h1>
+                                <h2>Web Developer</h2>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-4 col-md-4 col-12">
+                            <div class="box">
+                                <a href="#"><img src="a1.jpg" class="img-fluid img-thumbnail"></a>
+                                <p class="m-4">This one is my satisfied client he is Managing director in new indian enterprise</p>
+                                <h1>Ashish Vora</h1>
+                                <h2>Managing Director in Indian Enterprise</h2>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-4 col-md-4 col-12">
+                            <div class="box">
+                                <a href="#"><img src="ut.jpg" class="img-fluid img-thumbnail"></a>
+                                <p class="m-4">uttam vora is owner in new indian entrprice as well as my client</p>
+                                <h1>Uttam Vora</h1>
+                                <h2>Owner in Indian Enterprise</h2>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Left and right controls -->
+            <a class="carousel-control-prev" href="#demo" data-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+            </a>
+            <a class="carousel-control-next" href="#demo" data-slide="next">
+                <span class="carousel-control-next-icon"></span>
+            </a>
+
+        </div>
+
+    </section>
+    <!--*********************** our customers feedback end ***************************** -->
+
+    <!--*********************** contact us start ***************************** -->
+
+    <section class="contactus" id="contactid">
+        <div class="container headings text-center">
+            <h1 class="text-center font-weight-bold">
+                CONTACT US
+            </h1>
+            <p class="text-capitalize pt-1">I'm Shivam here To Help And Answer Any Question You Might Have. We Look
+                Forward To Hearing From You 🙂 </p>
+
+        </div>
+        <div class="continer" id="contact">
+            <div class="row">
+                <div class="col-lg-8 col-md-8 col-10 offset-lg-2 offset-md-2 col-1">
+
+                    <form action="/action_page.php">
+                        <div class="form-group" >
+                            <input type="text" class="form-control" placeholder="Enter Your Name" id="username"
+                                autocomplete="off" required>
+                        </div>
+
+                        <form action="/action_page.php">
+                            <div class="form-group">
+
+                                <input type="email" class="form-control" placeholder="Enter Your Email" id="email"
+                                    autocomplete="off" required>
+                            </div>
+
+                            <form action="/action_page.php">
+                                <div class="form-group">
+
+                                    <input type="number" class="form-control" placeholder="Enter Your Mobile Number"
+                                        id="mobile" autocomplete="off" required>
+                                </div>
+
+                                <div class="form-group">
+
+                                    <textarea class="form-control" placeholder="Enter Your Message" rows="4"
+                                        id="comment"></textarea>
+                                </div>
+
+                                <div class="d-flex justify-content-center form-button">
+                                    <button type="submit" class="btn btn-primary">Submit</button>
+                                </div>
+
+                            </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--*********************** contact us end ***************************** -->
+
+
+    <!--*********************** footer start ***************************** -->
+
+    <footer class="footersection" id="footerdiv">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 col-md-6 col-12 footer-div text-center">
+                    <div>
+                        <h3 class="text-info">ABOUT SHIVAM VORA</h3>
+                         <p align="justify" class="mt-5">-I utilize professional knowledge of the latest HTML (HTML5), CSS (CSS3) and Javascript -(ES6
+                            with
+                            backwards-compatibility) on front-end to achieve results. PHP and MySQL on the back-end.
+                                <br><br>
+                            -Expert in CSS & HTML & Wordpress
+                            Great understanding and implementation with JavaScript & jQuery,and i'm using wordpress powerful
+                            plugins.</p>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 col-12 footer-div text-center">
+                    <div>
+                        <h3 class="text-primary">NAVIGATION LINK</h3>
+                        <div class="mt-5">
+                         <li><a href="#">HOME</a></li>
+                         <li><a href="#servicedivv">SERVICES</a></li>
+                         <li><a href="#pricingdiv">PRICE</a></li>
+                         <li><a href="#footerdiv">ABOUT</a></li>
+                         <li><a href="#contactid">CONTACT US</a></li>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-12 col-12 footer-div text-center">
+                    <div>
+                        <h3 class="text-warning">SOCIAL MEDIA</h3>
+                        <div class="mt-5">
+                         <a href="https://www.linkedin.com/in/shivam-vora-79565a198/"><i class="fa-2x fa fa-linkedin container"></i></a>
+                         <a href="https://github.com/shivamvora"><i class="fa-2x fa fa-github container"></i></a>
+                         <a href="https://www.facebook.com/shivam.vora.505"><i class="fa-2x fa fa-facebook container"></i></a>
+                         <a href="https://www.instagram.com/shivam_vora/?hl=en"><i class="fa-2x fa fa-instagram container"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="mt-5 text-center">
+                <p>Copyright © 2020 All rights reserved| This website is made with love by Shivam Vora  </p>
+            </div>
+
+            <div class="scrolltop float-right">
+                <i class="fa fa-arrow-up text-white" onclick="topFunction()" id="myBtn"></i>
+            </div>
+        </div>
+
+        </div>
+    </footer>
+
+    <!--*********************** footer end ***************************** -->
+
+
+
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+
+    <script>
+        $('.count').counterUp({
+            delay: 10,
+            time: 3000
+        })
+
+        //Get the button
+        mybutton = document.getElementById("myBtn");
+
+        // When the user scroll down 20px from the top of the document, show the button
+        window.onscroll = function() {scrollFunction()};
+
+         function scrollFunction(){
+             if (document.body.scrollTop > 20  || document.documentElement.scrollTop > 20) {
+                 mybutton.style.display = "block";
+
+             }
+             else{
+                 mybutton.style.display = "none";
+             }
+         }
+         // when the user clicks on the button, scroll to the  top of the document
+         function topFunction(){
+             document.body.scrollTop = 0; // For safari
+             document.documentElement.scrollTop = 0; // For chrome, Firefox , IE and Opera
+         }
+
+    </script>
+</body>
+
+</html>
